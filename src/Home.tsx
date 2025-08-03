@@ -16,7 +16,7 @@ export const Default = () => {
 export const ParamsComponent = () => {
     const { id } = useParams();
     const dispatch = useDispatch()
-    const emails = useSelector((state) => state.emails);
+    const emails = useSelector((state: any) => state.emails);
     const navigate = useNavigate();
     const [URLSearchParams, SetURLSearchParams] = useSearchParams();
 
